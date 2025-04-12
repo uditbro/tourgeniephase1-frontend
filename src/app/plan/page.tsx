@@ -47,7 +47,7 @@ export default function PlanPage() {
     setItinerary("");
     try {
       const api = process.env.NEXT_PUBLIC_API_URL;
-      const response = await fetch(`${api}/trips/plan/`, {
+      const response = await fetch(`${api}`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
