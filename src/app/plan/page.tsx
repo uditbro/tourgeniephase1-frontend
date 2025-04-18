@@ -234,7 +234,7 @@ export default function PlanPage() {
     }
   };
 
-  const parseItinerary = (text) => {
+ const parseItinerary = (text: string) => {
     const days = text.split(/(?=Day \d+:)/i).filter(Boolean);
     return days.map((entry, index) => ({
       day: `Day ${index + 1}`,
